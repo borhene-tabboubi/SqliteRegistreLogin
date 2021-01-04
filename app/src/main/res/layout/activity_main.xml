@@ -1,99 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="match_parent"
+        android:id="@+id/imageView2"
+        android:layout_width="288dp"
+        android:layout_height="224dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="30dp"
-        android:paddingTop="0dp"
-        android:src="@drawable/koffa">
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginRight="109dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
 
-    </ImageView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="214dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        android:layout_below="@+id/login"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginRight="109dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName" />
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="234dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:text="Connecter" />
 
-        <EditText
-            android:id="@+id/edt_txt_login_id"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:hint="e-mail" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <EditText
-            android:id="@+id/edt_txt_password"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:hint="password" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.2"
-            android:onClick="login"
-            android:text="Login" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-
-
-</LinearLayout>
+</RelativeLayout>
