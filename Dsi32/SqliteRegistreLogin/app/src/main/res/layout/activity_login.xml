@@ -32,11 +32,11 @@
         android:text="@string/Remember_username"
         android:textSize="20sp"
         />
-    <EditText
+    <TextView
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:autofillHints="@string/espace"
-        android:inputType=""
+        android:inputType="text"
         tools:ignore="LabelFor" />
 
     <Button
